@@ -1,0 +1,98 @@
+.main-body{
+    /* background: url(https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+    background: url(https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?cs=srgb&dl=pexels-the-world-hopper-1851481.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+}
+.nav-item a{
+    color: black;
+}
+.nav-item a:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.blogslidebar{
+    background-color: #38ada9;
+}
+.author{
+    background-color: #0a3d62;
+}
+
+
+/* Try Mansory Template */
+.mansory{
+    position: relative;
+    column-count: 3;
+    padding: 10px;
+}
+
+.image{
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.image img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+
+.image h1{
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+.image:hover h1{
+    opacity: 0.5s;
+}
+
+
+@media screen and (max-width: 1024px){
+    .image h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .mansory{
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 425px){
+    
+    .mansory{
+        column-count: 1;
+    }
+    
+    .image h1{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    
+    .mansory{
+        column-count: 1;
+    }
+    
+    .image h1{
+        font-size: 15px;
+    }
+}
